@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Alexander Soto | Developer, Frontend & Backend</title>
+{% endblock title %}
+
+{% block content %}
+
+<nav class="navbar navbar-expand-lg  navbar-light ">
+  <a class="navbar-brand me-5" href="#" >
+    <img src="static/images/3426526.jpg" alt="Logo" width="100" height="100" class="d-inline-block align-text-center m-2">
+    Alexander Soto
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      
+      
+      <ul class="navbar-nav justify-content-left">
+        <li class="nav-item active">
+          <a class="nav-link active" aria-current="page" href="{% url 'about' %}">Acerca de mi<span class="sr-only">(current)</span></a></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'projects' %}">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Diseño web</a>
+        </li>
+      </ul>
+    </div> 
+</nav>
+
+<section class="introduction">
+        <div class="container_1">
+            <div class="column_1">
+                <div class="column_2">
+                    <div class="column_3">
+                        <h1 class="title">Diseñador web, Desarrollador Fontend & Backend</h1>
+                        <h2 class="subtitle">Hola soy Alex un desarrollador con una filosofía en mente, hacer las cosas más fáciles para ti!</h2>
+                        <img class="img-fluid" src="static/images/19362653.jpg" alt="" width="600" height="600">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pic">
+            <div>
+                <img class="img-fluid" src="static/images/engineer.jpg" alt="">
+            </div>
+        </div>
+</section>
+
+  <section class="prensentacion">
+    <div class="container_2">
+        <div class="column_4">
+            <div class="column_5">
+                <h1 class="title_2">Acerca de mi - About me</h1>
+                <h2 class="subtitle_2">Mi experiencia y mis conocimientos me han preparado para este puesto, además de las 
+                    habilidades blandas que poseo, me han permitido ejercer con pasión el desarrollo web. 
+                    En el transcurso de mis años como programador eh desarrollado diferentes tipos de 
+                    sitios web, que además de ser eficientes, poseen buenas prácticas de programación, siendo el 
+                    trabajo en equipo un pilar fundamental para el correcto funcionamiento del código desarrollado.</h2>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="seccion_3">
+    <div class="container">
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card">
+              <div class="card-body">
+                <img class="img_1" src="static/images/diseno-web.png " width="100" height="100" alt=""  >
+                <h5 class="card-title">Diseño</h5>
+                <p class="card-text">Siempre tengo en mente la simplicidad y estructuras limpias ya que muestran un gran atractivo visual.</p>
+                <h5 class="card_title">Cosas que disfruto diseñando</h5>
+                <p class="card-text">UX,UI,WEB,LOGOS</p>
+                <h5 class="card_title">herramientas</h5>
+                <li>Canva</li>
+                <li>Pothoshop</li>
+                <li>Pen & Paper</li>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card">
+              <div class="card-body">
+                <img class="img_1" src="static/images/back.png" width="100" height="100" alt="">
+                <h5 class="card-title">Backend</h5>
+                <p class="card-text">Desarrollo mis proyectos con Django, Python además de conocimiento en bases de datos tanto relacionales como no relacionales</p>
+                <h5 class="card_title">Lenguajes que manejo</h5>
+                <p class="card-text">PYTHON,MICROSOFT SQL SERVER, MONGODB, SQLITE</p>
+                <h5 class="card_title">Herramientas</h5>
+                <li>Git</li>
+                <li>Terminal</li>
+                <li>SQL</li>
+                <li>No SQL</li>
+                <li>Django</li>
+                <li>Visual studio</li>
+                <li>Visual studio code</li>
+                <li>Cpanel</li>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card">
+              <div class="card-body">
+                <img class="img_1" src="static/images/front-end.png " width="100" height="100" alt="">
+                <h5 class="card-title">Frontend</h5>
+                <p class="card-text">Disfruto poner en marcha mis ideas elaborando páginas web con HTML además de dar estilo a estas con CSS y dando vida con Bootstrap</p>
+                <h5 class="card_title">Lenguajes que manejo</h5>
+                <p class="card-text">HTML,CSS,Javascript</p>
+                <h5 class="card_title">Herramientas</h5>
+                <li>Github</li>
+                <li>Terminal</li>
+                <li>Bootstap</li>
+                <li>Gradients</li>
+                <li>Atom</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div class="conversation">
+    <div class="column_6">
+        <div>
+            <h1 class="title_3">Te gustaría colaborar conmigo?</h1>
+            <h2 class="subtitle_3">Siempre estoy dispuesto a avanzar en mi vida profesional y crecer mutuamente.</h2>
+            <a href="{% url 'contact' %}">
+            <button type="button" class="btn_1">Contacto</button>
+            </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="end">
+    <div class="container_4">
+        <a class="logo_end" href="">
+          <img src="static/images/layers.png" alt="" width="120" height="120">
+        </a>
+        <div class="frase">
+          <div class="container_5">
+            <h1 class="text_end">"El arte desafía a la tecnología y la tecnología inspira al arte"</h1>
+          </div >
+        </div>
+          <div class="logos">
+          <p class="field">
+            <a class="linkedin" href="https://www.linkedin.com/in/johann-soto-hernandez-bb6182208/" target="_blank">
+                <img  src="static/images/linkedin.png" width="50" height="50"  alt="">
+            </a>
+            <a class="github" href="https://github.com/johannsoto" target="_blank">
+                <img src="static/images/github.png" width="50" height="50" alt="">
+            </a>
+            <a class="mail" href="mailto:johann.96@hotmail.com" target="_blank">
+                <img src="static/images/mail.png" width="50" height="50" alt="">
+            </a>
+        </div>
+        </p>
+        </div>
+        <div class="copyright">
+          <p>Desarrollado por © Alexander Soto 2023</p>
+        </div>
+        <div class="made_with">
+          <p>Hecho Con Bootstrap-Django</p>
+        </div> 
+    </div>
+
+    
+  
+{% endblock content %}
